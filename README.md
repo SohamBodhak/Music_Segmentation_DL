@@ -4,10 +4,10 @@ This project implements multiple approaches for music source separation, aiming 
 
 ## Project Structure
 
-- **stage1_frequency_thresholding.py**: Implements a simple frequency-based separation using band-pass filters to isolate bass, vocals, and drums based on predefined frequency ranges.
-- **stage2_spectrogram_masking.py**: Uses Non-negative Matrix Factorization (NMF) to decompose the spectrogram and assign components to sources based on frequency dominance.
-- **stage3_classical_ml.py**: Employs a Random Forest classifier to predict source labels for time-frequency bins, creating masks for source separation.
-- **U-Net.py**: Implements a deep learning-based approach using a U-Net architecture with residual blocks for spectrogram-based source separation.
+- **frequency_thresholding**: Implements a simple frequency-based separation using band-pass filters to isolate bass, vocals, and drums based on predefined frequency ranges.
+- **spectrogram_masking**: Uses Non-negative Matrix Factorization (NMF) to decompose the spectrogram and assign components to sources based on frequency dominance.
+- **classical_ml**: Employs a Random Forest classifier to predict source labels for time-frequency bins, creating masks for source separation.
+- **DL**: Implements a deep learning-based approach using a U-Net architecture with residual blocks for spectrogram-based source separation.
 
 ## Features
 
@@ -89,9 +89,7 @@ python U-Net.py
 
 See `requirements.txt` for a complete list of dependencies.
 
-## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Acknowledgments
 
